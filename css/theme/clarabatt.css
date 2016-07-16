@@ -5,21 +5,11 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(../../lib/font/league-gothic/league-gothic.css);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(../../lib/font/encode-sans/encode-sans.css);
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-/*body {
-  background: #1c1e20;
-  background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #1c1e20));
-  background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: -o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background-color: #2b2b2b; }*/
-
 body
 {
   background : -moz-radial-gradient(49.79% 50.37%, circle farthest-corner, rgba(5, 29, 51, 0.9) 0%, rgba(5, 29, 51, 1) 100%);
@@ -32,9 +22,8 @@ body
   filter: progid:DXImageTransform.Microsoft.Alpha(Stlye=2);
 }
 
-
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Encode Sans", sans-serif;
   font-size: 36px;
   font-weight: normal;
   color: #eee; }
@@ -60,11 +49,11 @@ body
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #eee;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: 'Lobster Two', cursive;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   word-wrap: break-word; }
 
