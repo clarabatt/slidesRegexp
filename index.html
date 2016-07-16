@@ -2,9 +2,28 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/reveal.css">
 	<title>Apresentação RegExp</title>
 </head>
 <body>
-
+	<div class="reveal">
+		<div class="slides">
+			<section>Slide 1</section>
+			<section>
+				<section>Slide 2</section>
+				<section>Slide 3</section>
+			</section>
+		</div>
+	</div>
 </body>
 </html>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+	Reveal.initialize({
+    	controls: true, // mostra as setinhas na parte inferior
+    	progress: true, // mostra uma barra de progresso
+    	center: true, // centraliza os slides
+    	transition: 'slide' // none/fade/slide/convex/concave/zoom
+	}); 
+</script>
