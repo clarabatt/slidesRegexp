@@ -24,7 +24,7 @@ body
 
 .reveal {
   font-family: "Encode Sans", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: normal;
   color: #eee; }
 
@@ -72,7 +72,17 @@ body
 }
 
 .more-margin {
-  margin: 1.5em 0 0.5em 0 !important;
+  margin: 1.5em 0 1em 0 !important;
+}
+
+.yellow-font{
+  color: #F9D93D;
+}
+
+.text-box {
+  font-size: 18px !important;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 2em !important;
 }
 
 /*********************************************
