@@ -24,7 +24,7 @@ body
 
 .reveal {
   font-family: "Encode Sans", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
   color: #eee; }
 
@@ -69,6 +69,10 @@ body
 
 .titulo {
   font-size: 1.7em !important;
+}
+
+.more-margin {
+  margin: 1.5em 0 0.5em 0 !important;
 }
 
 /*********************************************
