@@ -78,6 +78,10 @@ body
   margin: 20px 0;
   line-height: 1.3; }
 
+.font-thin{
+  font-family: 'Encode Sans Thin';
+}
+
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
