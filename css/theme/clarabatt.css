@@ -29,8 +29,8 @@ body
   color: #eee; }
 
 ::selection {
-  color: #fff;
-  background: #FF5E99;
+  color: #2d2d2d;
+  background: #fff;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -80,6 +80,7 @@ body
 
 .font-thin{
   font-family: 'Encode Sans Thin';
+  font-weight: 100 !important;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -235,10 +236,7 @@ body
  * IMAGES
  *********************************************/
 .reveal section img {
-  margin: 15px 0px;
-  /*background: rgba(255, 255, 255, 0.12);*/
-  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
-  }
+  margin: 15px 0px; }
 
 .reveal section img.plain {
   border: 0;
