@@ -59,7 +59,7 @@ body
   font-size: 3.77em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 1.7em; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -69,10 +69,11 @@ body
 
 .titulo {
   font-size: 1.7em !important;
+  margin-bottom: 1.8em !important;
 }
 
 .more-margin {
-  margin: 1.5em 0 1em 0 !important;
+  margin: 0 0 1.5em 0 !important;
 }
 
 .margin-right {
@@ -174,9 +175,9 @@ body
   width: 90%;
   margin: 20px auto;
   text-align: left;
-  font-size: 0.55em;
+  font-size: 0.62em;
   font-family: monospace;
-  line-height: 1.2em;
+  line-height: 1.4em;
   word-wrap: break-word;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
@@ -185,10 +186,11 @@ body
 
 .reveal pre code {
   display: block;
-  padding: 5px;
+  padding: 0 2em;
   overflow: auto;
   max-height: 400px;
-  word-wrap: normal; }
+  word-wrap: normal;
+  margin-bottom: 3em; }
 
 .reveal table {
   margin: auto;
