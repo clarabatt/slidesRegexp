@@ -49,11 +49,25 @@ var primeiraRegexp = /abc/;
 				    </code></pre>
 				    <h2>Construtor</h2>
 				    <pre><code class="javascript">
-var primeiraRegexp2 = new RegExp("abc");
+var primeiraRegexp2 = new RegExp("Abc");
 				    </code></pre>
+				    <h4 class="yellow-font fragment margin-top">Cuidado! Regexp é Sensitive Case</h4>
 				</section>
 				<section>
 					<h1 class="titulo">var titulo = /(Caracteres Especiais)/;</h1>
+					<h2><span class="yellow-font">\w</span> - [A-Za-z0-9_]</h2>
+					<p>"abc" <img class="rotate180" src="img/arrow.png"> /\w/ = <span class="fragment yellow-font">"a"</span></p>
+          			<p>"$10" <img class="rotate180" src="img/arrow.png"> /\w/ = <span class="fragment yellow-font">"1"</span></p>
+          			<p>"JS_Day" <img class="rotate180" src="img/arrow.png"> /\w\w\w/ = <span class="fragment yellow-font">"JS_"</span></p>
+          			<p>"JS4Day" <img class="rotate180" src="img/arrow.png"> /\w\w\w\w/ = <span class="fragment yellow-font">"JS4D"</span></p>
+				</section>
+				<section>
+					<h2><span class="yellow-font">\d</span> - [0-9]</h2>
+					<p>"abc" <img class="rotate180" src="img/arrow.png"> /\d/ = <span class="fragment yellow-font">null</span></p>
+          			<p>"$10" <img class="rotate180" src="img/arrow.png"> /\d\d/ = <span class="fragment yellow-font">"10"</span></p>
+          			<p>"a1 a2 a3 a4" <img class="rotate180" src="img/arrow.png"> /\d\d\d\d/ = <span class="fragment yellow-font">null</span></p>
+          			<h4 class="yellow-font fragment margin-top">Como ficaria para pegar apenas os números dessa última sentença?</h4>
+          			<p class="fragment">"a1 a2 a3 a4" <img class="rotate180" src="img/arrow.png"> /\d/<span class="fragment yellow-font">g</span> = <span class="fragment yellow-font">"1234"</span></p>
 				</section>
 				<section>
 					<h1 class="titulo">var titulo = /(Sufixos)/;</h1>
