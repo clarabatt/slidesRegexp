@@ -137,6 +137,8 @@ body {
 
 .reveal .slides section .fragment.highlight-red,
 .reveal .slides section .fragment.highlight-current-red,
+.reveal .slides section .fragment.highlight-yellow,
+.reveal .slides section .fragment.highlight-current-yellow,
 .reveal .slides section .fragment.highlight-green,
 .reveal .slides section .fragment.highlight-current-green,
 .reveal .slides section .fragment.highlight-blue,
@@ -147,6 +149,9 @@ body {
 .reveal .slides section .fragment.highlight-red.visible {
   color: #ff2c2d; }
 
+.reveal .slides section .fragment.highlight-yellow.visible {
+  color: #F9D93D; }
+
 .reveal .slides section .fragment.highlight-green.visible {
   color: #17ff2e; }
 
@@ -155,6 +160,9 @@ body {
 
 .reveal .slides section .fragment.highlight-current-red.current-fragment {
   color: #ff2c2d; }
+
+.reveal .slides section .fragment.highlight-current-yellow.current-fragment {
+  color: #F9D93D; }
 
 .reveal .slides section .fragment.highlight-current-green.current-fragment {
   color: #17ff2e; }

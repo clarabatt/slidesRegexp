@@ -37,7 +37,7 @@
 						<span class="fragment margin-right">Código mais Limpo</span>
 						<span class="fragment">Mais Eficiência</span>
 					</div>
-					<div class="fragment text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh eros, pellentesque lobortis libero tempus mattis. Sed faucibus cursus nunc, sed convallis lacus tincidunt ut. Praesent quis diam eu massa accumsan tristique. Donec at vestibulum enim. Donec sed urna ut lacus tempor dignissim eu at urna. Nam mattis augue non justo convallis, suscipit blandit lorem facilisis. Nunc eleifend tincidunt imperdiet. Integer ante augue, molestie quis ornare ac, condimentum in turpis. Fusce erat mauris, tristique <span class="fragment highlight-red">nutella</span> sed felis sit amet, iaculis condimentum mi. Duis nulla ipsum, varius at feugiat viverra, cursus et nisl. Pellentesque fermentum, justo ac placerat vulputate, magna nisi venenatis purus, ac porttitor augue diam vitae dolor.<br>Maecenas sollicitudin, turpis quis rutrum lobortis, turpis ligula vulputate nunc, eu ultricies sapien leo in dolor. Nam urna purus, aliquet et volutpat non, vulputate blandit sem. Vivamus accumsan arcu sed magna fermentum elementum. Ut aliquam lacus vestibulum nunc sollicitudin rutrum. Quisque risus justo, auctor in rhoncus sed, mattis aliquet arcu. Pellentesque eleifend ac elit id scelerisque. Duis in auctor purus. Aliquam mattis erat massa, eu mattis diam faucibus in.</div>
+					<div class="fragment text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh eros, pellentesque lobortis libero tempus mattis. Sed faucibus cursus nunc, sed convallis lacus tincidunt ut. Praesent quis diam eu massa accumsan tristique. Donec at vestibulum enim. Donec sed urna ut lacus tempor dignissim eu at urna. Nam mattis augue non justo convallis, suscipit blandit lorem facilisis. Nunc eleifend tincidunt imperdiet. Integer ante augue, molestie quis ornare ac, condimentum in turpis. Fusce erat mauris, tristique <span class="fragment highlight-yellow">nutella</span> sed felis sit amet, iaculis condimentum mi. Duis nulla ipsum, varius at feugiat viverra, cursus et nisl. Pellentesque fermentum, justo ac placerat vulputate, magna nisi venenatis purus, ac porttitor augue diam vitae dolor.<br>Maecenas sollicitudin, turpis quis rutrum lobortis, turpis ligula vulputate nunc, eu ultricies sapien leo in dolor. Nam urna purus, aliquet et volutpat non, vulputate blandit sem. Vivamus accumsan arcu sed magna fermentum elementum. Ut aliquam lacus vestibulum nunc sollicitudin rutrum. Quisque risus justo, auctor in rhoncus sed, mattis aliquet arcu. Pellentesque eleifend ac elit id scelerisque. Duis in auctor purus. Aliquam mattis erat massa, eu mattis diam faucibus in.</div>
 				</section>
 			</section>
 			<section>
@@ -81,21 +81,21 @@ var primeiraRegexp2 = new RegExp("Abc");
 				</section>
 				<section>
 					<h1 class="titulo">var titulo = /(Outros Tipos de Caracteres)/;</h1>
-					<h3><span class="yellow-font">\s</span><span class="fragment"> - Espaços em Branco</span></h3>
-          			<h3><span class="yellow-font">\n</span><span class="fragment"> - Quebra de Linha</span></h3>
-					<h3><span class="yellow-font">\t</span><span class="fragment"> - Tabulações</span></h3>
-					<h3><span class="yellow-font">.</span><span class="fragment"> - Pega TUDO</span></h3>
-					<h3><span class="yellow-font">\(Letra Maiúscula)</span><span class="fragment"> - Inverso dos caracteres normais</span></h2>
+					<h3><span class="yellow-font">\s</span>- Espaços em Branco</h3>
+          			<h3><span class="yellow-font">\n</span>- Quebra de Linha</h3>
+					<h3><span class="yellow-font">\t</span>- Tabulações</h3>
+					<h3><span class="yellow-font">.</span>- Pega TUDO</h3>
+					<h3><span class="yellow-font">\(Letra Maiúscula)</span> - Inverso dos caracteres normais</h2>
 					<p class="fragment">\D - Casa com tudo exceto números</p>
                		<p class="fragment">\W - Casa com tudo exceto [A-Za-z0-9_]</p>
 				</section>
 				<section>
 					<h1 class="titulo">var titulo = /(Sufixos)/;</h1>
-					<h3>/regexp/<span class="yellow-font">g</span><span class="fragment"> - Busca Global</span></h3>
-          			<h3>/regexp/<span class="yellow-font">i</span><span class="fragment"> - Ignora o Case-sensitive</span></h3>
+					<h3>/regexp/<span class="yellow-font">g</span> - Busca Global</h3>
+          			<h3>/regexp/<span class="yellow-font">i</span> - Ignora o Case-sensitive</h3>
 				</section>
 				<section>
-					<h1 class="titulo">var titulo = /(Agrupamento)/;</h1>
+					<h1 class="titulo">var titulo = /(Agrupamento e Seleção)/;</h1>
 					<h3>/<span class="yellow-font">(</span>agrupando<span class="yellow-font">)</span>/g</h3>
 				</section>
 				<section>
@@ -114,19 +114,63 @@ var primeiraRegexp2 = new RegExp("Abc");
 					<pre><code class="javascript">
 var cpf = '12345678910';
 cpf.replace( /(\d\d\d)(\d\d\d )(\d\d\d )(\d\d)/, '$1.$2.$3-$4' );
-				    </code></pre>
-
-				</section>
-				<section>
-					<h1 class="titulo">var titulo = /(Seleção)/;</h1>
+				    </code></pre>					
 				</section>
 				<section>
 					<h1 class="titulo">var titulo = /(Repetição)/;</h1>
+					<h2 class="margin-top">Definida</h2>
+					<h3>/\w<span class="yellow-font">{n,m}</span>/g</h3>
+					<p>Com <span class="yellow-font">n</span> sendo o mínimo e <span class="yellow-font">m</span> o máximo.</p>
+					<h2 class="margin-top">Indefinida</h2>
+					<h3>/\w<span class="yellow-font">+</span>/g</h3>
+				</section>
+				<section>
+					<h1 class="titulo">var titulo = /(Validando URL)/;</h1>
+					<div class="more-margin">
+						<span class="margin-right">https://github.com</span>
+						<span class="margin-right">https://www.youtube.com</span>
+						<span class="margin-right">https://www.facebook.com.br</span>
+						<span class="margin-right">https://youtube.io</span>
+						<span class="margin-right">https://www.clara.me.br</span>
+						<span>https://clara.me.br</span>
+					</div>
+					<h1 class="margin-top">
+						\<span class="fragment highlight-current-yellow">https:\/\/</span>
+						<span class="fragment highlight-current-yellow">(www.)?</span>
+						<span class="fragment highlight-current-yellow">\w+.</span>
+						<span class="fragment highlight-current-yellow">\w{2,}</span>
+						<span class="fragment highlight-current-yellow">(.\w{2,})?</span>\</h1>
 				</section>
 			</section>
 			<section>
 				<section>
 					<h1 class="titulo">var titulo = /(Métodos)/;</h1>
+					<h2>Match</h2>
+					<pre><code class="javascript">
+var texto = 'Três pratos de trigo para três tigres tristes';
+texto.match(/trigo/);     //["trigo"]
+texto.match(/três/gi);    //["Três", "três"]
+				    </code></pre>
+					<h2 class="margin-top">Replace</h2>
+					<pre><code class="javascript">
+var texto = 'Três pratos de trigo para três tigres tristes';
+texto.replace(/(três)/gi, 'quatro');
+var texto = 'quatro pratos de trigo para quetro tigres tristes';
+				    </code></pre>
+				</section>
+				<section>
+					<h2 class="margin-top">Split</h2>
+					<pre><code class="javascript">
+var meses = 'jan,fev,mar,abr,mai,jun,jul,ago,set,nov,dez';
+meses.split(/,/);     //["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "nov", "dez"]
+'jsday.com.br'.split(/\W/);     //["jsday", "com", "br"]
+'123.456.789-10'.split(/\D/);     //["123", "456", "789", "10"] 
+				    </code></pre>
+					<h2 class="margin-top">Test</h2>
+					<pre><code class="javascript">
+var texto = 'três pratos de trigo para três tigres tristes';
+/tigres/.test(texto);    //true
+				    </code></pre>
 				</section>
 			</section>
 			<section>
